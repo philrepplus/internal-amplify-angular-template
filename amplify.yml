@@ -10,6 +10,8 @@ frontend:
     preBuild:
       commands:
         - npx ng version
+        - npm use 20
+        - npm install --legacy-peer-deps
     build:
       commands:
         - npx ng build --configuration=production
